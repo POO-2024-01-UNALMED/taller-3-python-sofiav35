@@ -25,20 +25,20 @@ class TV:
     def getCanal(self):
         return self._canal
     def setCanal(self, canal):
-        if (canal<=120) and (canal>=1) and (self._estado==True):
+        if (canal<=120 and canal>=1 and self._estado==True):
             self._canal=canal
 
 #metodos get y set de precio. 
     def getPrecio(self):
         return self._precio
     def setPrecio(self, precio):
-        self.precio=precio
+        self._precio=precio
 
 #metodos get y set de volumen. 
     def getVolumen(self):
         return self._volumen
     def setVolumen(self, volumen):
-        if(volumen>=0)and(volumen<=7)and(self._estado==True):
+        if(volumen>=0 and volumen<=7 and self._estado==True):
             self._volumen=volumen
 
 #metodos get y set de control
@@ -61,17 +61,17 @@ class TV:
 
 #Cambio de canal
     def canalUp(self,canal):
-        if(canal<120)and(self._estado==True):
+        if(canal<120 and self._estado==True):
             self._canal+=1
     def canalDown(self, canal):
-        if (canal>1)and(self._estado==True):
+        if (canal>1 and self._estado==True):
             self._canal-=1
 
 #Cambio de volumen
     def volumenUp(self, volumen):
-        if(volumen<7)and(self._estado==True):
+        if(volumen<7 and self._estado==True):
             self._volumen+=1
     def volumenDown(self, volumen):
-        if (volumen>0)and(self._estado==True):
+        if (volumen>0 and self._estado==True):
             self._volumen-=1
       
