@@ -6,6 +6,7 @@ class TV:
         self._canal=1
         self._volumen=1
         self._precio=500
+        self._control=0
         TV._numTV+=1
 #metodos get y set numero de televisores
     @classmethod
