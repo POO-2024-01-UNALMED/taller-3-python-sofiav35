@@ -1,6 +1,6 @@
 class Control:
     def __init__(self):
-        self._tv=tv
+        self._tv=0
 
 #encendido y apagado control
     def turnOn(self):
