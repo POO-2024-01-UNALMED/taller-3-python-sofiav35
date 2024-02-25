@@ -23,7 +23,7 @@ class TV:
 
 #metodos get y set de canal.
     def getCanal(self):
-        return self.canal
+        return self._canal
     def setCanal(self, canal):
         if (canal<=120) and (canal>=1) and (self._estado==True):
             self._canal=canal
