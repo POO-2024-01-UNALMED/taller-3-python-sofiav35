@@ -48,10 +48,10 @@ class TV:
         self._control=control
 
 #Encendido y apagado
-    def turnOn(self, estado):
-       self._estado=False
-    def turnOff(self, estado):
-        self._estado=True
+    def turnOn(self):
+       self._estado=True
+    def turnOff(self):
+        self._estado=False
 
 #metodos get y set del estado
     def getEstado(self):
